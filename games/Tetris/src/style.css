@@ -1,0 +1,148 @@
+:root {
+    --primary-text-color: rgb(253, 243, 229);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 24px;
+}
+
+.hidden{
+    display: none;
+}
+
+h1 {
+    font-size: 3.052rem;
+    color: var(--primary-text-color);
+    margin: 2rem;
+}
+h2 {
+    font-size: 2.441rem;
+    color: var(--primary-text-color);
+}
+h3 {
+    font-size: 1.953rem;
+    color: rgba(255, 255, 255, 0.701);
+    font-weight: normal;
+}
+h4 {
+    font-size: 1.563rem;
+    color: var(--primary-text-color);
+}
+h5 {
+    font-size: 1.25rem;
+    color: var(--primary-text-color);
+    padding-bottom: 1rem;
+}
+h6 {
+    font-size: 1rem;
+    color: var(--primary-text-color);
+    position: relative;
+    z-index: 2;
+}
+p {
+    font-size: 1rem;
+    color: var(--primary-text-color);
+}
+
+button {
+    font-size: 1rem;
+    color: var(--primary-text-color);
+    margin: 2rem;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 8%;
+    border: none;
+    background-color: black;
+    border: 1px solid var(--primary-text-color);
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+    background-color: rgb(9, 13, 22);
+    position: relative;
+    padding-top: 5px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.start-text-container{
+    position: relative;
+    padding-top: 20vh;
+    padding-bottom:20vh;
+    width: 60%;
+    z-index: 1;
+    margin: auto;
+    transition: visibility 2s;
+}
+
+.grid {
+    background-color: rgba(181, 181, 181, 0.511);
+    width: 17.5vw;
+    height: 35vw;
+    margin: 0rem 2rem 0rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.grid::after {
+    content: "";
+    box-shadow: inset 5px 5px 10px white, inset -5px -5px 10px white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.grid div {
+    height: 1.75vw;
+    width: 1.75vw;
+    border: 0.5px solid rgba(9, 13, 22, 0.088);
+    
+}
+
+.mini-grid {
+    background-color: rgba(181, 181, 181, 0.511);
+    width: 8vw;
+    height: 8vw;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.mini-grid::after {
+    content: "";
+    box-shadow: inset 5px 5px 10px white, inset -5px -5px 10px white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.mini-grid div {
+    height: 2vw;
+    width: 2vw;
+    border: 0.5px solid rgba(9, 13, 22, 0.088);
+}
+
+.tetrimino {
+    box-shadow: inset 2px 2px 6px  rgba(255, 255, 255, 0.323), inset -2px -2px 6px  rgba(0, 0, 0, 0.508);
+}
+.empty {
+    width: 8vw;
+    height: 8vw;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+}
