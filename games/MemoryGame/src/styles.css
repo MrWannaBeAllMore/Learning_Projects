@@ -1,0 +1,142 @@
+:root {
+    --primary-text-color: rgb(253, 243, 229);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+html {
+font-size: 14px;
+}
+
+
+h1 {
+    font-size: 3.052rem;
+    color: var(--primary-text-color);
+    margin: 2rem;
+}
+h2 {
+    font-size: 2.441rem;
+    color: var(--primary-text-color);
+}
+h3 {
+    font-size: 1.953rem;
+    color: rgba(255, 255, 255, 0.701);
+    font-weight: normal;
+}
+h4 {
+    font-size: 1.563rem;
+    color: var(--primary-text-color);
+}
+h5 {
+    font-size: 1.25rem;
+    color: var(--primary-text-color);
+    padding-bottom: 1rem;
+}
+h6 {
+    font-size: 1rem;
+    color: var(--primary-text-color);
+    position: relative;
+    z-index: 2;
+}
+p {
+    font-size: 1rem;
+    color: var(--primary-text-color);
+}
+
+
+main {
+    text-align: center;
+    background-image: url(../src/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 5px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.596);  
+}
+
+button {
+    font-size: 1rem;
+    color: var(--primary-text-color);
+    margin: 2rem;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 8%;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+
+.start-text-container{
+    position: relative;
+    padding-top: 10vh;
+    padding-bottom:10vh;
+    width: 60%;
+    z-index: 1;
+    margin: auto;
+    transition: visibility 2s;
+}
+.game {
+    position: relative;
+    padding-top: 10vh;
+    z-index: 2;
+    transition: visibility 2s;
+}
+.title {
+    text-align: center;
+}
+
+.grid {
+    width: 90%;
+    height: fit-content;
+    background-color: rgba(245, 245, 245, 0.096);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+}
+img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 24px;
+    }
+  }
+
+
+  @media only screen and (min-width: 1280px) {
+    .grid {
+        grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+        width: 70%;
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+    .grid {
+        grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+        width: 50%;
+    }
+    .start-text-container{
+        padding-top: 20vh;
+    padding-bottom:20vh;
+    }
+  }
